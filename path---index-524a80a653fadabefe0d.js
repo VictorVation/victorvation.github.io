@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{501:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Victor Szeto"}},allMarkdownRemark:{edges:[{node:{excerpt:"It was September 9, 2013. Early morning thundershowers had cleared to a gorgeously sunny day by mid-morning, and by 11:20 AM — ten minutes…",fields:{slug:"/first-lecture/"},frontmatter:{date:"21 April, 2018",title:"The First Lecture"},timeToRead:2}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-524a80a653fadabefe0d.js.map

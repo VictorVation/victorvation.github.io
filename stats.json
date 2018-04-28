@@ -1,0 +1,44 @@
+{
+  "assetsByChunkName": {
+    "path---first-lecture": [
+      "path---first-lecture-d5bda273b5edb2d2837b.js",
+      "path---first-lecture-d5bda273b5edb2d2837b.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-a45f8b64fcd6c460e5ae.js",
+      "component---src-pages-index-js-a45f8b64fcd6c460e5ae.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-a3ff4b370a59361cc600.js",
+      "component---src-templates-blog-post-js-a3ff4b370a59361cc600.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-4c9d6999c670f6843f34.js",
+      "component---src-layouts-index-js-4c9d6999c670f6843f34.js.map"
+    ],
+    "path---index": [
+      "path---index-524a80a653fadabefe0d.js",
+      "path---index-524a80a653fadabefe0d.js.map"
+    ],
+    "commons": [
+      "commons-6a9efea04cf42cdfb1a3.js",
+      "commons-6a9efea04cf42cdfb1a3.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-6423f258ba4c392da00e.js",
+      "app-6423f258ba4c392da00e.js.map"
+    ]
+  }
+}
