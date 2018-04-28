@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
+import idx from 'idx'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
@@ -8,15 +8,15 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle = idx(this.props, _ => _.data.site.siteMetadata.title)
+    const posts = idx(this.props, _ => _.data.allMarkdownRemark.edges)
 
     return (
       <div>
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
+          const title = idx(node, _ => _.frontmatter.title) || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <h3
@@ -24,11 +24,11 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
+                <Link to={node.fields.slug}>{title}</Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {node.frontmatter.date} · {node.timeToRead} min read
+              </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
@@ -58,6 +58,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             title
           }
+          timeToRead
         }
       }
     }

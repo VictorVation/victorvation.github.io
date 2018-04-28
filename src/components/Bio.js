@@ -30,8 +30,9 @@ class Bio extends React.Component {
             }}
           />
           <p>
-            Written by Victor Szeto, Seattle-based software engineer from Canada
-            and computer engineering graduate from the University of Waterloo.
+            Thoughts and opinions written by Victor Szeto, Seattle-based
+            software engineer from Canada and computer engineering graduate from
+            the University of Waterloo.
           </p>
         </div>
         <div style={{ margin: '0 auto' }}>
