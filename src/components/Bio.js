@@ -30,11 +30,19 @@ class Bio extends React.Component {
             }}
           />
           <p>
-            Written by <strong>Victor Szeto</strong>, computer engineering
-            student at the University of Waterloo.
+            Written by Victor Szeto, Seattle-based software engineer from Canada
+            and computer engineering graduate from the University of Waterloo.
           </p>
         </div>
-        <EmailForm showPitch={true} />
+        <div style={{ margin: '0 auto' }}>
+          <small>
+            <a href="https://www.twitter.com/victorvation">twitter</a> ·{' '}
+            <a href="https://www.github.com/victorvation">github</a> ·{' '}
+            <a href="https://www.instagram.com/victorvation">instagram</a> ·{' '}
+            <a href="https://open.spotify.com/user/victorvation">spotify</a>
+          </small>
+        </div>
+        {/*<EmailForm showPitch={true} />*/}
       </div>
     )
   }

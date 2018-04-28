@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Victor Szeto',
     author: 'Victor Szeto',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    description: 'The writings and thoughts of Victor Szeto',
+    siteUrl: 'https://victorszeto.com/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-46624647-2`,
       },
     },
     `gatsby-plugin-feed`,

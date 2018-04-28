@@ -40,9 +40,8 @@ class Template extends React.Component {
           }}
         >
           <Link
+            className="top"
             style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
               color: 'inherit',
             }}
             to={'/'}

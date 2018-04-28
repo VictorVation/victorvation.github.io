@@ -17,7 +17,10 @@ class EmailForm extends React.PureComponent {
       <div>
         {this.props.showPitch && (
           <p>
-            I write weekly, concise summaries on technology, music, and culture.
+            {/*I write concise, weekly summaries on consumer technology, software
+                        engineering, maximalism and culture.*/}
+            Liked what you read? I write about my views on philosophy,
+            technology, productivity and culture.
           </p>
         )}
         <form

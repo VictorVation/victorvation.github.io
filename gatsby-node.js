@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
@@ -29,7 +30,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Create blog posts pages.
-        result.data.allMarkdownRemark.edges.forEach(edge => {
+        _.each(result.data.allMarkdownRemark.edges, edge => {
           createPage({
             path: edge.node.fields.slug,
             component: blogPost,

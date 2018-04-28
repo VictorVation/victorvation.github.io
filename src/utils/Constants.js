@@ -1,6 +1,6 @@
 const Constants = Object.freeze({
-    linkColor: '#ff5700',
-    hoverColor: '#cc2400',
+    linkColor: '#e51937',
+    hoverColor: '#e51937',
 })
 
 export default Constants

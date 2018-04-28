@@ -1,7 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import idx from 'idx'
 
+import Bio from '../components/Bio'
 import EmailForm from '../components/EmailForm'
 import { rhythm, scale } from '../utils/typography'
 
@@ -22,11 +24,20 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1 / 2),
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date} · {post.timeToRead} min read
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <h6>Get updates on what's happening in consumer tech</h6>
-        <EmailForm showPitch={true} />
+        {/*<div style={{ marginBottom: rhythm(1) }}>
+          <small>
+            Liked what you read? Check me out on{' '}
+            <a href="https://www.twitter.com/VictorVation">Twitter</a> or check
+            out <Link to="/">some of my other posts</Link>.
+          </small>
+        </div>*/}
+        <hr />
+        <Bio />
+        {/*<h2>Get updates on new posts</h2>
+                <EmailForm showPitch={true} />*/}
       </div>
     )
   }
@@ -49,6 +60,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
       }
+      timeToRead
     }
   }
 `
