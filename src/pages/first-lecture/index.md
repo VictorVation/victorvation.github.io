@@ -39,6 +39,6 @@ The man turned back to the board, quickly solving the physics problem, and from 
 
 Fifty minutes later, the man dismissed the class. The students, dazed from their first lecture, quickly packed up. The nervous chatter resumed. As the volume level increased and students began to head towards the exits, the man's voice once again boomed through the commotion:
 
-"By the way, everybody, my name is Firas Mansour," he declared, introducing himself to the class for the first time.
+"By the way, everybody, my name is Mansour," he declared, introducing himself to the class for the first time.
 
 "Welcome to ECE."
