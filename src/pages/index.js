@@ -17,9 +17,23 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={siteTitle}>
           <meta property="og:title" content={siteTitle} />
-          <meta property="og:type" content="website" />
           <meta property="og:url" content="https://victorszeto.com" />
-          <meta property="og:image" content={profilePic} />
+          <meta
+            property="og:description"
+            content="Thoughts and opinions written by Victor Szeto, Seattle-based software engineer from Canada and computer engineering graduate from the University of Waterloo."
+          />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:image"
+            content={`https://victorszeto.com${profilePic}`}
+          />
+          <meta
+            property="og:image:url"
+            content={`https://victorszeto.com${profilePic}`}
+          />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="320" />
+          <meta property="og:image:height" content="320" />
         </Helmet>
         <Bio isHomepage={true} />
         {posts.map(({ node }) => {
