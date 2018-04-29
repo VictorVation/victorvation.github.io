@@ -49,7 +49,7 @@ class BlogPostTemplate extends React.Component {
           </small>
         </div>*/}
         <hr />
-        <Bio />
+        <Bio isHomepage={false} />
         {/*<h2>Get updates on new posts</h2>
                 <EmailForm showPitch={true} />*/}
       </div>

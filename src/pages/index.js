@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
           <meta property="og:url" content="https://victorszeto.com" />
           <meta property="og:image" content={profilePic} />
         </Helmet>
-        <Bio />
+        <Bio isHomepage={true} />
         {posts.map(({ node }) => {
           const title = idx(node, _ => _.frontmatter.title) || node.fields.slug
           return (
