@@ -5,16 +5,30 @@ import idx from 'idx'
 
 import Bio from '../components/Bio'
 import EmailForm from '../components/EmailForm'
+import profilePic from '../components/profile-pic.jpg'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = idx(this.props, _ => _.data.site.siteMetadata.title)
-
+    const pageTitle = `${post.frontmatter.title} | ${siteTitle}`
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={pageTitle}>
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:type" content="article" />
+          <meta
+            property="og:url"
+            content={`https://victorszeto.com${this.props.pathContext.slug}`}
+          />
+          <meta property="og:article:author" content="Victor Szeto" />
+          <meta
+            property="og:article:date"
+            content={post.frontmatter.timestamp}
+          />
+          <meta property="og:image" content={profilePic} />
+        </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -58,6 +72,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        timestamp: date
         date(formatString: "MMMM DD, YYYY")
       }
       timeToRead

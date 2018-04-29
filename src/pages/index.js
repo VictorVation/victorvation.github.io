@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import idx from 'idx'
 import Helmet from 'react-helmet'
 
+import profilePic from '../components/profile-pic.jpg'
+
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
@@ -13,7 +15,12 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={siteTitle}>
+          <meta property="og:title" content={siteTitle} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://victorszeto.com" />
+          <meta property="og:image" content={profilePic} />
+        </Helmet>
         <Bio />
         {posts.map(({ node }) => {
           const title = idx(node, _ => _.frontmatter.title) || node.fields.slug
