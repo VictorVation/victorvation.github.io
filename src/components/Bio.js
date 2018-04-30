@@ -11,7 +11,6 @@ export default function Bio({ isHomepage }) {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        marginBottom: rhythm(2.5),
       }}
     >
       {/* !isHomepage && (
