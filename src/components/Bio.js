@@ -1,5 +1,6 @@
 import React from 'react'
 import Link, { withPrefix } from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import EmailForm from './EmailForm'
 import profilePic from './profile-pic.jpg'
@@ -49,10 +50,21 @@ export default function Bio({ isHomepage }) {
         <small>
           {!isHomepage && <Link to="/">more writing</Link>}
           {!isHomepage && ' · '}
-          <a href="https://www.twitter.com/victorvation">twitter</a> ·{' '}
-          <a href="https://www.github.com/victorvation">github</a> ·{' '}
-          <a href="https://www.instagram.com/victorvation">instagram</a> ·{' '}
-          <a href="https://open.spotify.com/user/victorvation">spotify</a>
+          <OutboundLink href="https://www.twitter.com/victorvation">
+            twitter
+          </OutboundLink>{' '}
+          ·{' '}
+          <OutboundLink href="https://www.github.com/victorvation">
+            github
+          </OutboundLink>{' '}
+          ·{' '}
+          <OutboundLink href="https://www.instagram.com/victorvation">
+            instagram
+          </OutboundLink>{' '}
+          ·{' '}
+          <OutboundLink href="https://open.spotify.com/user/victorvation">
+            spotify
+          </OutboundLink>
         </small>
       </div>
       {/*<EmailForm showPitch={true} />*/}
