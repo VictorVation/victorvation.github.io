@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
+    "build": "next build && next export # node ./scripts/gen-rss.js && ",
     "start": "next start"
   },
   "dependencies": {
