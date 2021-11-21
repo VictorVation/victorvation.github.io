@@ -30,6 +30,9 @@ jobs:
     
     - run: npm run build --if-present
     
+    - name: Add .nojekyll file
+      run: touch ./out/.nojekyll
+    
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.6
       with:
