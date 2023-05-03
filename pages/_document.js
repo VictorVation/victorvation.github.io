@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     const meta = {
       title: 'Victor Szeto',
-      description: 'Victor Szeto',
+      description: 'Victor Szeto'
     }
 
     return (

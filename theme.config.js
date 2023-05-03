@@ -1,27 +1,17 @@
-// // const YEAR = new Date().getFullYear()
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-// export default {
-//   footer: null
-//   // footer: (
-//   //   <small style={{ display: 'block', marginTop: '8rem' }}>
-//   //     <time>{YEAR}</time> © Your Name.
-//   //     <a href="/feed.xml">RSS</a>
-//   //     <style jsx>{`
-//   //       a {
-//   //         float: right;
-//   //       }
-//   //       @media screen and (max-width: 480px) {
-//   //         article {
-//   //           padding-top: 2rem;
-//   //           padding-bottom: 4rem;
-//   //         }
-//   //       }
-//   //     `}</style>
-//   //   </small>
-//   // )
-// }
+const YEAR = new Date().getFullYear()
+
 export default {
-  footer: <p>MIT 2023 © Nextra.</p>,
+  footer: (
+    <small style={{ display: 'block', marginTop: '8rem' }}>
+      <time>{YEAR}</time> © Victor Szeto.
+      <Link style={{ float: 'right' }} href="/">
+        Home
+      </Link>
+    </small>
+  ),
   head: ({ title, meta }) => (
     <>
       {meta.description && (
@@ -33,11 +23,10 @@ export default {
   ),
   readMore: 'Read More →',
   postFooter: null,
-  darkMode: false,
-  navs: [
-    {
-      url: 'https://github.com/shuding/nextra',
-      name: 'Nextra'
-    }
-  ]
+  darkMode: true,
+  navs: [],
+  titleSuffix: ' | Victor Szeto'
 }
+
+// footer: (
+// )
