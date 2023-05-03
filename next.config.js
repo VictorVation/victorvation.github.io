@@ -1,7 +1,15 @@
 const withNextra = require('nextra')({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.js',
-  staticImage: true
+  staticImage: true,
+  readingTime: true
 })
 
-module.exports = withNextra()
+const nextConfig = {
+  images: {
+    loader: 'akamai',
+    path: '/'
+  }
+}
+
+module.exports = withNextra(nextConfig)
