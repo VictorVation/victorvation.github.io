@@ -1,14 +1,12 @@
 const withNextra = require('nextra')({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.js',
-  staticImage: true,
-  readingTime: true
+  staticImage: true
 })
 
 const nextConfig = {
   images: {
-    loader: 'akamai',
-    path: '/'
+    unoptimized: true
   }
 }
 
